@@ -139,7 +139,7 @@ nav .list-nav{
  }
  .section-hero{
     background-color: var(--navy-blue);
-    min-width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     background-image: linear-gradient(
               rgba(46, 47, 66, 0.7),
@@ -180,7 +180,7 @@ nav .list-nav{
 }
 
 .section-team{
-    min-width: 1440px;
+   
     background-color: var(--cloud);
     padding-top: 120px; 
     padding-bottom: 120px;
@@ -308,8 +308,6 @@ nav .list-nav{
 }
 
 .list-team-text{
-    background: #FFFFFF;
-    border-radius: 0px 0px 4px 4px;
     text-align: center;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -320,6 +318,8 @@ nav .list-nav{
     margin-top: 8px;
 }
  .item-team{
+    background: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -469,8 +469,8 @@ nav .list-nav{
  }
  /*------------------------------Footer-------------------------*/
 .footer{
-    min-width: 1440px;
-    padding: 100px 0 100px 0;
+ 
+    padding: 100px 138px 100px 0;
     background-color: var(--navy-blue);
     color: var(--cloud);
 }
@@ -513,8 +513,9 @@ nav .list-nav{
 .social-media{
     margin-right: 80px;
 }
-.subscribe-block{
-  
+.subscribe-form{
+    display: flex;
+    gap: 24px;
 }
 .subscribe-input{
     background-color: transparent;
@@ -539,8 +540,8 @@ nav .list-nav{
    
 }
 .subscribe-submit{
-    display:flex;
-    gap: 24px;
+    display: flex;
+  
 }
 .social-media-title{
     font-style: normal;
@@ -659,6 +660,7 @@ nav .list-nav{
     margin: 0 auto;
     border-radius: 4px;
     border: none;
+    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -682,15 +684,17 @@ nav .list-nav{
 .label{
     position: relative;
     display: flex;
+    gap: 4px;
     flex-direction: column;
     width: 100%;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    margin-bottom: 8px;
   
 }
-.label:not(:last-child) {
-    margin-bottom: 8px;
+.label:last-of-type {
+    margin-bottom: 16px;
 }
 .modal-input{
     height: 40px;
@@ -724,6 +728,7 @@ nav .list-nav{
     height: 120px;
     border-radius: 4px;
     border: 1px solid var(--navy-blue);
+    padding: 8px 16px;
     resize: none;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -733,10 +738,6 @@ nav .list-nav{
     border-color:  var(--iris); 
 }
 
-.modal-textarea::placeholder{
-    padding-left: 16px;
-    padding-top: 8px;
-}
 .modal-consent{
     display: flex; 
     margin-bottom: 24px;
