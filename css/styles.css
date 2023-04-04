@@ -470,7 +470,7 @@ nav .list-nav{
  /*------------------------------Footer-------------------------*/
 .footer{
  
-    padding: 100px 138px 100px 0;
+    padding: 100px 0;
     background-color: var(--navy-blue);
     color: var(--cloud);
 }
